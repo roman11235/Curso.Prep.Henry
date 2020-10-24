@@ -77,7 +77,9 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-   		if (str1.lenght === str2.lenght;) {
+  var str1 = str1.length;
+  var str2 = str2.length;
+   		if (str1 === str2) {
    			return true;
    		}
    		else{
@@ -90,10 +92,10 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   	if (num<90) {
-  		return true
+  		return true;
   	}
   	else{
-  		return false
+  		return false;
   	}
 
 }
@@ -128,7 +130,7 @@ function esPar(num) {
   	return true;
   }
   else {
-  	return false
+  	return false;
   }
 
 }
@@ -142,7 +144,7 @@ function esImpar(num) {
   	return true;
   }
   else {
-  	return false
+  	return false;
   }
 }
 
@@ -150,50 +152,69 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
+  var power = num ** 2;
+  return power;
   
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
+  var power = num ** 3;
+  return power;
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
+  var power = num ** exponent;
+  return power;
 }
 
 function redondearNumero(num) {
   // Redondea "num" y devuélvelo
   // Tu código:
+  var round = Math.round(num);
+  return round;
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba y devuélvelo
   // Tu código:
+  var round = Math.ceil(num);
+  return round;
 }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+  var newString= str + '!';
+  return newString;
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
+  var fullName = nombre + ' ' + apellido;
+  return fullName;
+
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
+	var greeting = 'Hola ' + nombre + '!';
+	return greeting;
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un cuadrado teniendo su altura y ancho
   // Tu código:
+  area = alto * ancho;
+  return area;
 }
 
 
