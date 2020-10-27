@@ -69,7 +69,7 @@ function nuevoUsuario(nombre, email, password) {
         email: email,
         password: password,
 
-    }
+    };
 
     return user;
 }
@@ -79,11 +79,19 @@ function tieneEmail(usuario) {
     // De lo contratio, devuelve "false"
     // Tu código:
 
-    if (usuario['email'] === null || usuario['email'] === undefined) {
-        return false;
-    } else {
-        return true;
+    // if (usuario['email'] === null || usuario['email'] === undefined) {
+    //     return false;
+    // } else {
+    //     return true;
+    // }
+
+    if (usuario['email']) {
+    	return true;
+    }else{
+    	return false;
     }
+
+
 }
 
 
@@ -93,12 +101,17 @@ function tienePropiedad(objeto, propiedad) {
     // De lo contrario, devuelve "false"
     // Tu código:
 
-    for (let clave in objeto)
-        if (objeto[clave] === objeto[propiedad]) {
-            return true;
-        } else {
-            return false;
-        }
+    // for (let clave in objeto)
+    //     if (objeto[clave] === objeto[propiedad]) {
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
+    if (objeto[propiedad]) {
+    	return true;
+    }else{
+    	return false;
+    }
 
 }
 
@@ -108,11 +121,13 @@ function verificarPassword(usuario, password) {
     // De lo contrario, devuelve "false"
     // // Tu código:
 
-    if (usuario['password'] === password) {
-        return true;
-    } else {
-        return false;
-    }
+    // if (usuario['password'] === password) {
+    //     return true;
+    // } else {
+    //     return false;
+    // }
+
+    return usuario['password'] === password;
 
 
 }
@@ -181,11 +196,14 @@ function agregarMetodoCalculoDescuento(producto) {
     // Tu código:
 
     producto.calcularPrecioDescuento = function() {
-        descuento = this.precio * this.porcentajeDeDescuento;
-        precioDescuento = this.precio - descuento;
-        return precioDescuento;
+        // descuento = this.precio * this.porcentajeDeDescuento;
+        // precioDescuento = this.precio - descuento;
+        // return precioDescuento;
+        return this.precio - (this.precio * this.porcentajeDeDescuento);
     }
     return producto;
+
+
 }
 
 // No modificar nada debajo de esta línea
