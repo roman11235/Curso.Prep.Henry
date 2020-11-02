@@ -1,0 +1,207 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+ 
+}
+body {
+    margin: 0px;
+    position: relative;
+}
+
+/* ===== main =====================  
+=================================== */
+.container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box {
+    border-radius: 25px;
+    margin-top: 50px;
+    padding: 40px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3) ;
+}
+
+
+/* ===== navbar ===================  
+=================================== */
+
+.navbar{
+    font-size: 0.9em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    padding: 10px 0;
+    background-color: white;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.3) ;
+}
+
+@media screen and (min-width:730px) {
+    .logo {
+        float: left;
+    }
+  }
+  @media screen and (min-width: 0) {
+    .logo {
+        margin: 5px auto;
+        text-align: center ;   
+    }
+}
+.logo a {
+    margin: 5px 16px;
+    font-size: 2em;
+    text-decoration-line: none;
+    color:rgba(61, 57, 92);
+
+}
+
+.navbar-nav{
+    padding-left: 0px;
+    float: right;
+
+}
+
+.nav-item {
+    display: inline;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding:5px 0px;
+    list-style: none;
+
+}
+.nav-link {
+    color: black;
+    text-decoration-line: none;
+    text-transform: uppercase;
+
+
+}
+ul li a:hover{
+    color:  rgba(61, 57, 92, 0.8);
+    border-bottom: solid 2px  rgba(61, 57, 92, 0.8);
+    transition: 0.2s;
+}
+
+
+/* ===== about me =================  
+=================================== */
+
+#about-me {
+    position: relative;
+    margin-top: 130px;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 680px){
+    #about-me {
+        margin-top: 150px;
+    }
+}
+@media screen and (max-width: 343px){
+    #about-me {
+        margin-top: 160px;
+    }
+}
+
+.fixed {
+    overflow: auto;
+}
+
+@media screen and (min-width:700px) {
+    .img-profile{
+        float: left;
+        width:40%;
+    } 
+}
+  @media screen and (max-width: 699px) {
+    .img-profile{
+        display: inline;
+        width:80%;
+    }
+}
+
+
+.img-profile {
+    margin:32px 32px 32px 0;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.2);
+    clear: right;
+
+}
+
+#about-me h3 {
+    color:rgba(61, 57, 92);
+    font-size: 2em;
+}
+
+#about-me p {
+    padding: 0 25px;
+}
+
+/* ===== education ================  
+=================================== */
+
+#education h3 {
+
+    color:rgba(61, 57, 92);
+    font-size: 2em;
+
+}
+
+/* ===== work-experience ==========  
+=================================== */
+
+#work-experience h3 {
+    color:rgba(61, 57, 92);
+    font-size: 2em;
+}
+@media screen and (min-width:500px) {
+    .column-3 {
+        -moz-column-count: 2;
+        -moz-column-gap: 1em;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 1em;
+        column-count: 2;
+        column-gap: 1em;
+    }
+}
+@media screen and (min-width:670px) {
+    .column-3 {
+        -moz-column-count: 3;
+        -moz-column-gap: 1em;
+        -webkit-column-count: 3;
+        -webkit-column-gap: 1em;
+        column-count: 3;
+        column-gap: 1em;
+    }
+}
+/* ===== skills =================== 
+=================================== */
+
+#skills h3 {
+    color:rgba(61, 57, 92);
+    font-size: 2em;
+}
+
+/* ===== hobbies ================== 
+=================================== */
+
+#hobbies h3 {
+    color:rgba(61, 57, 92);
+    font-size: 2em;
+}
+
+/* ===== footer =================== 
+=================================== */
+
+#footer {
+    background-color: rgb(119, 119, 119);
+    height: 100px;
+    margin-top: 50px;
+   
+}
